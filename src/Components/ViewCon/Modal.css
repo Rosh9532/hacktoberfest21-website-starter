@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+}
+.add_pin_modal_ {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.58);
+}
+
+.add_pin_container_ {
+  width: 880px;
+  height: 540px;
+  border-radius: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 35px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.side_ {
+  width: 50%;
+  height: auto;
+  padding: 20px;
+}
+
+
+
+#left_side__ {
+  /* background-color: aqua; */
+}
+
+#right_side_ {
+  /* background-color: orange; */
+}
+
+#left_side_ .section1 {
+  cursor: pointer;
+  width: 40px;
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+
+
+.section2 {
+  margin-top: 20px;
+  box-sizing: border-box;
+  padding: 0px 10px;
+  width: 100%;
+  height: 80%;
+  /* background-color: cadetblue; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#left_side_ .section2 img{
+  width: 100%;
+}
+
+#left_side_ .section2 #upload_img_label {
+  width: 100%;
+  height: 100%;
+  
+}
+
+#left_side_ .section2 #upload_img_label input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#left_side_ .section2 #upload_img_label .upload_img_container {
+  width: 100%;
+  height: 100%;
+  background-color: #efefef;
+  border-radius: 10px;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+}
+
+#left_side_ .section2 #upload_img_label .upload_img_container #dotted_border {
+  box-sizing: border-box;
+  width: 95%;
+  height: 100%;
+  border: 2px dashed #dadada;
+  border-radius: 10px;
+  padding: 4px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+}
+
+.modal_pin {
+  width: 250px;
+  height: 512px;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  display: none;
+}
+
+.modal_pin .pin_image {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pin_image img {
+  opacity: 0;
+}
+
+.pin_max_width {
+  max-width: 100%;
+}
+
+.pin_max_height {
+  max-height: 100%;
+}
+
+#left_side_ .section3 {
+  height: 12%;
+  width: 100%;
+  /* background-color: crimson; */
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#left_side_ .section3 .save_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 250px;
+  height: 100%;
+  border-radius: 22px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+#left_side_ .section3 .save_button .pumpkin img {
+  width: 70px;
+  animation: anim 2s alternate infinite;
+}
+
+#left_side_ .section3 .save_button .save_from_site {
+  font-size: 30px;
+  text-shadow: 2px 2px #ff0000;
+  padding: 10px;
+}
+
+#right_side_ .section1 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#right_side_ .section1 .select_size {
+  width: 236px;
+  height: 40px;
+  display: flex;
+}
+
+#right_side_ .section1 .select_size select {
+  width: 70%;
+  height: 100%;
+  border: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: #efefef;
+  outline: none;
+  font-size: 16px;
+  font-family: "Qahiri", sans-serif;
+  padding-left: 10px;
+}
+
+#right_side_ .section1 .select_size .save_pin {
+  width: 30%;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: #e21515;
+  font-size: 30px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Qahiri", sans-serif;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+#right_side_ .section2 .new_pin_input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 30px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #0c030393;
+  font-size: 16px;
+}
+
+#right_side_ .save_pin_button {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  justify-content: center;
+  font-size: 30px;
+  background-color: red;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  cursor: pointer;
+}
+
+#right_side_ .save_pin_button:hover {
+  transform: scale(1.1);
+}

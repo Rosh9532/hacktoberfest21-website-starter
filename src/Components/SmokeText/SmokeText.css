@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Qahiri&display=swap");
+
+* {
+  font-family: "Creepster", cursive;
+}
+
+body {
+  background: white;
+}
+
+.add_constestant {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.add_constestant .buttonstyle {
+  position: absolute;
+  top: 15%;
+  left: 80%;
+  font-size: 30px;
+  transform: translate(0, -50%);
+  width: 200px;
+  height: 50px;
+  background-color: red;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add_constestant .buttonstyle:hover {
+  transform: scale(1.1);
+}
+section {
+  height: 10px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  font-size: 100px;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-100%);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: aliceblue;
+}
+
+h1 span {
+  opacity: 0;
+  display: inline-block;
+  animation: anim 1s linear forwards;
+}
+@keyframes anim {
+  0% {
+    opacity: 0;
+    transform: rotateY(-90deg);
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg);
+    filter: blur(0px);
+  }
+}
+
+h1 span:nth-child(13) {
+  animation-delay: 1s;
+}
+
+h1 span:nth-child(12) {
+  animation-delay: 1.2s;
+}
+
+h1 span:nth-child(11) {
+  animation-delay: 1.4s;
+}
+
+h1 span:nth-child(10) {
+  animation-delay: 1.6s;
+}
+
+h1 span:nth-child(9) {
+  animation-delay: 1.8s;
+}
+
+h1 span:nth-child(8) {
+  animation-delay: 2s;
+}
+
+h1 span:nth-child(7) {
+  animation-delay: 2.2s;
+}
+
+h1 span:nth-child(6) {
+  animation-delay: 2.4s;
+}
+
+h1 span:nth-child(5) {
+  animation-delay: 2.6s;
+}
+
+h1 span:nth-child(4) {
+  animation-delay: 2.8s;
+}
+
+h1 span:nth-child(3) {
+  animation-delay: 3s;
+}
+
+h1 span:nth-child(2) {
+  animation-delay: 3.2s;
+}
+
+h1 span:nth-child(1) {
+  animation-delay: 3.4s;
+}
+
+.vid {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+video {
+  width: 100%;
+  margin-top: -100px;
+}
